@@ -1,0 +1,20 @@
+{
+  "name": "dts-parser-example",
+  "private": "true",
+  "version": "1.0.0",
+  "typings": "index.d.ts",
+  "scripts": {
+    "parse": "node interface-comments-parser.js"
+  },
+  "dependencies": {
+    "@youngjuning/interface-comments-parser": "^5.1.0",
+    "react-native-deprecated-custom-components": "^0.1.2",
+    "resolve-package": "^1.0.1",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.63.37",
+    "definitelyTyped": "tuya/DefinitelyTyped",
+    "eslint-config-tuya": "^1.0.0-rc.0"
+  }
+}

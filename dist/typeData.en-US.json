@@ -1,0 +1,219 @@
+[
+  {
+    "name": "stretch",
+    "optional": "true",
+    "types": "boolean",
+    "language": "en-US",
+    "description": "Does the button follow the parent container stretch?",
+    "defaultValue": "false"
+  },
+  {
+    "name": "disabled",
+    "optional": "true",
+    "types": "boolean",
+    "language": "en-US",
+    "description": "Is the button disabled?",
+    "defaultValue": "false"
+  },
+  {
+    "name": "size",
+    "optional": "true",
+    "types": "'large' | 'normal' | 'small' | 'noSet' | number",
+    "language": "en-US",
+    "description": "Button background size, the default is `noset`. large: 48, normal: 40, small: 32.",
+    "defaultValue": "'noSet'"
+  },
+  {
+    "name": "type",
+    "optional": "true",
+    "types": "'primary' | 'normal'",
+    "language": "en-US",
+    "description": "Button background type. normal: the background color is transparent; primary: it follows the main color",
+    "defaultValue": "'normal'"
+  },
+  {
+    "name": "background",
+    "optional": "true",
+    "types": "string | <a target=\"_blank\" href=\"https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L6\">LinearGradientBackground</a> | <a target=\"_blank\" href=\"https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L14\">RadialGradientBackground</a>",
+    "language": "en-US",
+    "description": "Button background, can be color value or gradient value",
+    "defaultValue": "null"
+  },
+  {
+    "name": "text",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Text content in the button",
+    "defaultValue": "''"
+  },
+  {
+    "name": "textSingleLine",
+    "optional": "true",
+    "types": "boolean",
+    "language": "en-US",
+    "description": "Does the text in the button display only one line, that is, beyond the ellipsis",
+    "defaultValue": "true"
+  },
+  {
+    "name": "textDirection",
+    "optional": "true",
+    "types": "'left' | 'top' | 'right' | 'bottom' | 'center'",
+    "language": "en-US",
+    "description": "The text arrangement direction within the button. The default placement text is at the bottom of the button",
+    "defaultValue": "'bottom'"
+  },
+  {
+    "name": "icon",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Icon name inside the button",
+    "defaultValue": "undefined"
+  },
+  {
+    "name": "iconPath",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Icon path within the button",
+    "defaultValue": "null"
+  },
+  {
+    "name": "iconSize",
+    "optional": "true",
+    "types": "number",
+    "language": "en-US",
+    "description": "Icon size in button",
+    "defaultValue": "null"
+  },
+  {
+    "name": "iconColor",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "The color of the icon within the button",
+    "defaultValue": "null"
+  },
+  {
+    "name": "image",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "The path of image resources in the button",
+    "defaultValue": "null"
+  },
+  {
+    "name": "imageColor",
+    "optional": "true",
+    "types": "string"
+  },
+  {
+    "name": "imageStyle",
+    "optional": "true",
+    "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/image-style-props\">StyleProp<ImageStyle></a>",
+    "language": "en-US",
+    "description": "The image style inside the button",
+    "defaultValue": "null"
+  },
+  {
+    "name": "badgeText",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Logo font content, that is, the logo in the upper right corner of the button",
+    "defaultValue": "''"
+  },
+  {
+    "name": "disabledOpacity",
+    "optional": "true",
+    "types": "number",
+    "language": "en-US",
+    "description": "Disable transparency scale for button content",
+    "defaultValue": "0.2"
+  },
+  {
+    "name": "style",
+    "optional": "true",
+    "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+    "language": "en-US",
+    "description": "The style of the button",
+    "defaultValue": "{}"
+  },
+  {
+    "name": "wrapperStyle",
+    "optional": "true",
+    "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+    "language": "en-US",
+    "description": "The style of the outermost container",
+    "defaultValue": "{}"
+  },
+  {
+    "name": "border",
+    "optional": "true",
+    "types": "string | boolean | number",
+    "language": "en-US",
+    "description": "The border value of the button background is defective on Android. It is not used for the time being",
+    "defaultValue": "true"
+  },
+  {
+    "name": "textStyle",
+    "optional": "true",
+    "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/text-style-props\">StyleProp<TextStyle></a>",
+    "language": "en-US",
+    "description": "Font style in button",
+    "defaultValue": "{}"
+  },
+  {
+    "name": "badgeStyle",
+    "optional": "true",
+    "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+    "language": "en-US",
+    "description": "The style of the logo container inside the button",
+    "defaultValue": "{}"
+  },
+  {
+    "name": "badgeTextStyle",
+    "optional": "true",
+    "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/text-style-props\">StyleProp<TextStyle></a>",
+    "language": "en-US",
+    "description": "The style of the logo font within the button",
+    "defaultValue": "{}"
+  },
+  {
+    "name": "useART",
+    "optional": "true",
+    "types": "boolean",
+    "language": "en-US",
+    "defaultValue": "false"
+  },
+  {
+    "name": "textAccessibilityLabel",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Test identification",
+    "defaultValue": "'Button_Text'"
+  },
+  {
+    "name": "badgeAccessibilityLabel",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Test identification",
+    "defaultValue": "'Button_Badge'"
+  },
+  {
+    "name": "badgeTextAccessibilityLabel",
+    "optional": "true",
+    "types": "string",
+    "language": "en-US",
+    "description": "Test identification",
+    "defaultValue": "'Button_Badge_Text'"
+  },
+  {
+    "name": "theme",
+    "optional": "true",
+    "types": "{  fontSize?: number;  fontColor?: string;  iconSize?: number;  bgWidth?: number;  bgHeight?: number;  bgColor?: string;  margin?: number[];  iconColor?: string;  bgRadius?: number;}"
+  }
+]

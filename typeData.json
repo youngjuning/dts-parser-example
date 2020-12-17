@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "onPress": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "color": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/typeofOpaqueColorValue"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "accessibilityLabel": {
+      "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "testID": {
+      "description": "Used to locate this button in end-to-end tests.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "onPress",
+    "title"
+  ],
+  "definitions": {
+    "typeofOpaqueColorValue": {
+      "type": "object",
+      "properties": {
+        "__@toStringTag": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "__@toStringTag"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

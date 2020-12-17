@@ -1,0 +1,574 @@
+[
+  {
+    "optional": "true",
+    "name": "stretch",
+    "types": "boolean",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮是否跟随父容器拉伸",
+          "defaultValue": "false"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Does the button follow the parent container stretch?",
+          "defaultValue": "false"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "disabled",
+    "types": "boolean",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮是否禁用",
+          "defaultValue": "false"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Is the button disabled?",
+          "defaultValue": "false"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "size",
+    "types": "'large' | 'normal' | 'small' | 'noSet' | number",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮背景尺寸，默认为 noSet。large: 48, normal: 40, small: 32。",
+          "defaultValue": "'noSet'"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Button background size, the default is `noset`. large: 48, normal: 40, small: 32.",
+          "defaultValue": "'noSet'"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "type",
+    "types": "'primary' | 'normal'",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮背景类型。normal：背景色为transparent；若为primary：则跟随主色",
+          "defaultValue": "'normal'"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Button background type. normal: the background color is transparent; primary: it follows the main color",
+          "defaultValue": "'normal'"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "background",
+    "types": "BackgroundProps",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮背景，可为颜色值或渐变值",
+          "types": "string | <a target=\"_blank\" href=\"https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L6\">LinearGradientBackground</a> | <a target=\"_blank\" href=\"https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L14\">RadialGradientBackground</a>",
+          "defaultValue": "null"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Button background, can be color value or gradient value",
+          "types": "string | <a target=\"_blank\" href=\"https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L6\">LinearGradientBackground</a> | <a target=\"_blank\" href=\"https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/theme.d.ts#L14\">RadialGradientBackground</a>",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "text",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的文字内容",
+          "defaultValue": "''"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Text content in the button",
+          "defaultValue": "''"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "textSingleLine",
+    "types": "boolean",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的文字是否只显示一行，即超出显示省略号",
+          "defaultValue": "true"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Does the text in the button display only one line, that is, beyond the ellipsis",
+          "defaultValue": "true"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "textDirection",
+    "types": "'left' | 'top' | 'right' | 'bottom' | 'center'",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的文字排列方向，默认放置文字位于按钮底部",
+          "defaultValue": "'bottom'"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The text arrangement direction within the button. The default placement text is at the bottom of the button",
+          "defaultValue": "'bottom'"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "icon",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图标名称",
+          "defaultValue": "undefined"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Icon name inside the button",
+          "defaultValue": "undefined"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "iconPath",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图标路径",
+          "defaultValue": "null"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Icon path within the button",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "iconSize",
+    "types": "number",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图标尺寸",
+          "defaultValue": "null"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Icon size in button",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "iconColor",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图标颜色",
+          "defaultValue": "null"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The color of the icon within the button",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "image",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图片资源路径",
+          "defaultValue": "null"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The path of image resources in the button",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "imageColor",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图片颜色",
+          "defaultValue": "null"
+        },
+        "en_US": {
+          "language": "en_US",
+          "description": "The color of the image inside the button",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "imageStyle",
+    "types": "StyleProp<ImageStyle>",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内的图片样式",
+          "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/image-style-props\">StyleProp<ImageStyle></a>",
+          "defaultValue": "null"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The image style inside the button",
+          "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/image-style-props\">StyleProp<ImageStyle></a>",
+          "defaultValue": "null"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "badgeText",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "徽标字体内容，即按钮右上角徽标",
+          "defaultValue": "''"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Logo font content, that is, the logo in the upper right corner of the button",
+          "defaultValue": "''"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "disabledOpacity",
+    "types": "number",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内容的禁用透明度比例",
+          "defaultValue": "0.2"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Disable transparency scale for button content",
+          "defaultValue": "0.2"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "style",
+    "types": "StyleProp<ViewStyle>",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮的样式",
+          "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+          "defaultValue": "{}"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The style of the button",
+          "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+          "defaultValue": "{}"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "wrapperStyle",
+    "types": "StyleProp<ViewStyle>",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "最外层容器的样式",
+          "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+          "defaultValue": "{}"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The style of the outermost container",
+          "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+          "defaultValue": "{}"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "border",
+    "types": "string | boolean | number",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮背景的边框值，安卓有瑕疵，暂时不用",
+          "defaultValue": "true"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The border value of the button background is defective on Android. It is not used for the time being",
+          "defaultValue": "true"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "textStyle",
+    "types": "StyleProp<TextStyle>",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内字体样式",
+          "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/text-style-props\">StyleProp<TextStyle></a>",
+          "defaultValue": "{}"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Font style in button",
+          "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/text-style-props\">StyleProp<TextStyle></a>",
+          "defaultValue": "{}"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "badgeStyle",
+    "types": "StyleProp<ViewStyle>",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内徽标容器的样式",
+          "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+          "defaultValue": "{}"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The style of the logo container inside the button",
+          "types": "<a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>",
+          "defaultValue": "{}"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "badgeTextStyle",
+    "types": "StyleProp<TextStyle>",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "按钮内徽标字体的样式",
+          "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/text-style-props\">StyleProp<TextStyle></a>",
+          "defaultValue": "{}"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "The style of the logo font within the button",
+          "types": "<a target=\"_blank\" href=\"https://reactnative.dev/docs/text-style-props\">StyleProp<TextStyle></a>",
+          "defaultValue": "{}"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "useART",
+    "types": "boolean",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "defaultValue": "false"
+        },
+        "en-US": {
+          "language": "en-US",
+          "defaultValue": "false"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "textAccessibilityLabel",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "测试标识",
+          "defaultValue": "'Button_Text'"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Test identification",
+          "defaultValue": "'Button_Text'"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "badgeAccessibilityLabel",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "测试标识",
+          "defaultValue": "'Button_Badge'"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Test identification",
+          "defaultValue": "'Button_Badge'"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "badgeTextAccessibilityLabel",
+    "types": "string",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "测试标识",
+          "defaultValue": "'Button_Badge_Text'"
+        },
+        "en-US": {
+          "language": "en-US",
+          "description": "Test identification",
+          "defaultValue": "'Button_Badge_Text'"
+        }
+      }
+    }
+  },
+  {
+    "optional": "true",
+    "name": "theme",
+    "types": "{  fontSize?: number;  fontColor?: string;  iconSize?: number;  bgWidth?: number;  bgHeight?: number;  bgColor?: string;  margin?: number[];  iconColor?: string;  bgRadius?: number;}",
+    "meta": {
+      "base": {},
+      "i18n": {
+        "zh-CN": {
+          "language": "zh-CN",
+          "description": "主题配置",
+          "defaultValue": "{}"
+        },
+        "theme": {
+          "language": "theme",
+          "description": "Theme configuration",
+          "defaultValue": "{}"
+        }
+      }
+    }
+  }
+]
